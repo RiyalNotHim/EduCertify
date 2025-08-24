@@ -1,0 +1,2 @@
+# EduCertify
+EduCerƟfy is a blockchain-powered plaƞorm that enables secure issuance and verificaƟon of academic cerƟficates and skill credenƟals. By leveraging the Aptos blockchain and Move smart contracts, EduCerƟfy creates tamper-proof, transparent, and instantly verifiable cerƟficates that solve the long-standing problems of fraud, delays, and lack of trust in tradiƟonal paper-based or centralized systems. 
