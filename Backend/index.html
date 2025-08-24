@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCertify - Blockchain Certificates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 EduCertify</h1>
+            <p>Verifiable Academic Certificates on the Aptos Blockchain</p>
+            <button id="connectBtn">Connect Wallet</button>
+            <p id="walletAddress"></p>
+        </header>
+
+        <main>
+            <section class="card" id="issuer-section">
+                <h2>For Issuers (Teachers)</h2>
+                <p>Initialize your account (one-time action).</p>
+                <button id="initIssuerBtn">Initialize Issuer Account</button>
+                <hr>
+                <h3>Issue a New Certificate</h3>
+                <input type="text" id="studentAddress" placeholder="Student's Wallet Address">
+                <input type="text" id="courseName" placeholder="Course Name">
+                <input type="text" id="issuerName" placeholder="Issuer Name (e.g., Prof. Smith)">
+                <input type="text" id="certUrl" placeholder="Certificate Image URL">
+                <button id="issueCertBtn">Issue Certificate</button>
+                <hr>
+                <h3>Revoke a Certificate</h3>
+                <input type="text" id="revokeStudentAddress" placeholder="Student's Wallet Address">
+                <input type="text" id="revokeCertId" placeholder="Certificate ID (e.g., 0, 1, 2...)">
+                <button id="revokeCertBtn" class="danger">Revoke Certificate</button>
+            </section>
+
+            <section class="card" id="student-section">
+                <h2>For Students - My Skills Passport</h2>
+                <p>Initialize your account (one-time action).</p>
+                <button id="initStudentBtn">Initialize Certificate Store</button>
+                <hr>
+                <button id="viewCertsBtn">View My Certificates</button>
+                <div id="certificate-list"></div>
+            </section>
+        </main>
+        
+        <p id="status"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
