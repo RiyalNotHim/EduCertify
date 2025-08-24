@@ -1,12 +1,112 @@
-# React + Vite
+# 🎓 EduCertify – Blockchain Academic Certificates & Skills Passport  
+**Bringing Trust Back to Academic Credentials**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Blockchain](https://img.shields.io/badge/Blockchain-Aptos-blue?logo=blockchain)  
+![Smart Contracts](https://img.shields.io/badge/Smart%20Contracts-Move-green)  
+![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20TailwindCSS-ff69b4)  
+![License](https://img.shields.io/badge/License-MIT-orange)  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Contract Details
+- **Deployed Contract Address**:  
+  `0x2c0339b13c805b62a62fe6b2fccbc0d5d11b902d2245148351515659d5e7ffaa`  
 
-## Expanding the ESLint configuration
+- **Testnet Explorer Link**:  
+  [View on Aptos Explorer](https://explorer.aptoslabs.com/?network=testnet)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📖 Project Description
+EduCertify is a **blockchain-powered platform** for secure issuance and verification of academic certificates and skill credentials.  
+
+By leveraging the **Aptos blockchain** and **Move smart contracts**, EduCertify ensures that all certificates are:  
+- Tamper-proof 🔒  
+- Instantly verifiable 🌍  
+- Globally portable via a **Skills Passport** 🪪  
+
+This empowers **universities, teachers, and organizations** to issue certificates, while **students and employers** can verify authenticity **without intermediaries**.  
+
+---
+
+## ✨ Key Features
+- 🏫 **On-chain Certificate Issuance** – Directly mint certificates on Aptos blockchain  
+- 🪪 **Student Skills Passport** – Lifelong portfolio of verified credentials  
+- ❌ **Revocation Support** – Revoke outdated or invalid certificates  
+- 🌐 **Decentralized Verification** – No intermediaries, instant trustless checks  
+- 🔍 **Transparency & Trust** – Prevents forgery, duplicates, and fraud  
+- ⚡ **Scalable Design** – Multi-institution & micro-certification support  
+
+---
+
+## 🛠 Tech Stack
+- **Blockchain**: Aptos Testnet  
+- **Smart Contracts**: Move Language  
+- **Frontend**: React + TailwindCSS  
+- **Wallet Integration**: Aptos Wallet Adapter  
+- **Storage**: IPFS (Optional, for metadata/proofs)  
+
+---
+
+## 🔑 Smart Contract Functions
+```move
+add_teacher(admin, new_teacher)          // Add certificate issuers
+add_admin(admin, new_admin)              // Add new admins
+issue_certificate(issuer, student, ...)  // Issue certificate
+revoke_certificate(admin, id)            // Revoke invalid certificate
+get_certificates(student)                // View all student certificates
+📸 Screenshots
+📜 Certificate Issuance Flow
+
+
+🎓 Student Certificate Dashboard
+
+
+⚡ How It Works
+Teacher/Admin Issues Certificate → Smart contract mints certificate on-chain
+
+Student Receives Certificate → Stored securely in student’s blockchain account
+
+Employer Verifies Certificate → Instant check on Aptos Explorer
+
+🚀 Getting Started
+1. Clone Repo
+bash
+Copy
+Edit
+git clone https://github.com/<your-repo>/educertify.git
+cd educertify
+2. Compile Contracts
+bash
+Copy
+Edit
+aptos move compile --named-addresses teacher=<teacher_address>,student=<student_address>
+3. Deploy Contracts
+bash
+Copy
+Edit
+aptos move publish --profile teacher
+4. Run Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+🌍 Future Scope
+🌐 Global University Integration – Cross-border credential verification
+
+💼 Job Portal Integration – Direct hiring verification
+
+📱 Mobile Wallet for Certificates – Carry credentials in crypto wallets
+
+🏛 Government & Corporate Partnerships – Standardizing credentials
+
+🤖 AI-Powered Insights – Automated skill-job matching
+
+👥 Contributors
+Swayam Chopda – Smart Contracts & Deployment
+Sattyam Chavan – Frontend, Integration & Documentation
+Sonali Patki - PPT and Documentation
+
+⭐ If you find this project interesting, don’t forget to Star the Repo and contribute!
